@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hariharan Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+.service-icon{
+	
+	padding: 2rem;
+	display:flex;
+	align-items: center;
+	font-size: 3rem;
+	position: relative;
+	color: yellow;
+	padding-left: 120px;
+}
+
+.section-services .service-box{
+	text-align:center;
+}
+.section-services{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.service-btn{
+	width:auto;
+	justify-content: center;
+	background:#ffbd39;
+}
+.service-box:hover{
+	transform: translate(-.7rem);
+}
+
+.portfolio-gallery{
+	display:grid;
+	grid-template-columns:repeat(auto-fill,minmax(270px,1fr));
+	gap:2rem;
+
+}
+.port-box{
+	position: relative;
+	border-radius: 15px;
+	overflow: hidden;
+	background: #292e33;
+	display:flex;
+	grid-template-rows: 1fr auto;
+	align-items: center;
+	border: 2px solid rgb(21, 21, 20);
+	box-shadow: #ffbd39;
+
+}
+
+.port-image{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width:100%;
+
+}
+
+.port-image img{
+	width:100%;
+	opacity:.5s;
+	height:100%;
+	transition: .5s;
+
+}
+
+.port-content{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	/* background: linear-gradient(rgba(0,0,0,.2),rgb(234, 255, 0)); */
+	background: linear-gradient(rgba(0,0,0,.2),rgba(117, 117, 43, 0.427));
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	transition: 0.5s;
+	padding:0.2rem;
+	color: white;
+}
+
+.port-box:hover .port-content{
+	opacity: 20;
+}
+
+.port-box:hover .port-image img{
+	transform: scale(1.1);
+}
+
+.port-content h3{
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.port-content p{
+	font-size: .8rem;
+	margin: 5px 0 15px 0;
+
+
+}
+
+.port-content a{
+	background: #fff;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #fff;
+	outline: 2px solid #fff;
+
+}
+
+.port-contenta i{
+	font-size: 1.3rem;
+	color: #ffbd39;
+}
+
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+		<img src="images/port.jpg" alt="Logo" style="height: 40px; margin-right: 10px;">
+	      <a class="navbar-brand" href="index.html">Portfolio</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Internship</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Achievements</span></a></li>
+			  <li class="nav-item"><a href="#project-sections" class="nav-link"><span>Certification</span></a></li>
+			  <li class="nav-item"><a href="#project-sectionss" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/front.png)">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Hariharan</span></h1>
+                        <h5><span>Passionate about</span></h5>
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+                        
+						// Create an array of typing text
+						const typingTexts = [
+						'ML Engineer  ',
+						'Data Scientist',
+						'Full Stack developer'
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Student at CIT</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+
+			            <p><a href="https://drive.google.com/file/d/1FtcCYzw84BbNyR-1KPDobWuzApq2LkmB/view" class="btn btn-primary py-3 px-4">Resume</a> 
+						</p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/harish.jpg" class="img-fluid rounded b-shadow-a" alt="" style="height: 200px;width: 200px;">
+
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Hariharan Krishna moorthi</span></p>
+										<p><span class="title-s">Role: </span> <span>Student</span></p>
+										<p><span class="title-s">Experience: </span> <span>8 Months as an Intern</span></p>
+										<p><span class="title-s">Address: </span> <span>Coimbatore, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>AWS Basics</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									
+									<span>Machine Learning</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Web Development</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Flutter</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I'm a student at Coimbatore Institute of Technology, specializing in Artificial Intelligence and Data Science.
+								Proficient in ML, data analysis, and app/web development, I'm driven to innovate and solve challenges. Eager to
+								contribute to impactful projects and expand my expertise in AI and data science. Explore my portfolio to see my work in
+								action.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Machine Learning &amp; Data Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>AI, NLP&amp; Computer Vision</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Tamil</span></li>
+									<li class="d-flex"><span>Skills:</span> <span>Flutter,React Native,MySQL,HTML,CSS,R Basics,AWS,C,C++,Python &amp; OpenCV</span></li>
+									<li class="d-flex"><span>Hobbies:</span> <span>Playing Chess,Watching Cricket</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="5">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/hari-haran-k-5aa27b227" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Internships</h1>
+            <h2 class="mb-4">Internships</h2>
+            <p>I have gained invaluable experience as an intern for six months, where I served as an NLP Engineer, honing
+			my skills in natural language processing and machine learning while contributing to real-world projects. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+          </div>
+        </div>
+
+		
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Jan 2024</span>
+						<h2>Ml project intern</h2>
+						<span class="position">Magnus Vista</span>
+						<p class="mt-4">MagnusVista Technologies is a highly focused technology company that builds on the ability of Microsoft server products like SharePoint Server and Microsoft Dynamics to address the needs of businesses.
+							<ul>
+								<li>Joined as a project intern at jan 2024 and we initially learned how to work with Image data and created simple model using CNN</li>
+								<li>Implemented various Ml techniques for image classfication  like RESNET ,VGG16,ImageNet by modifying its architectures</li>
+								
+							</ul>
+						</p>
+						<div class="row justify-content-center mt-5">
+							
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2023-Dec 2023</span>
+						<h2>NLP and ML Engineer</h2>
+						<span class="position">Quintessence Business Solutions</span>
+						<p class="mt-4">Quintessence is a medical billing and coding company that offers end-to-end RCM services, including AR, and denial
+						management, to different healthcare service providers.
+							<ul>
+								<li>Performed in-depth medical data analysis.Implemented neural network models, generating confidence scores, and fine-tuning models for improved
+								accuracy.</li>
+								<li>Successfully predicting disease types with good accuracy and Gained hands-on experience in NLP, ML, and data science. </li>
+								
+							</ul>
+						</p>
+						<div class="row justify-content-center mt-5">
+							
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2025</span>
+    					<h2>B.Tech Artificial Intelligence and Data Science</h2>
+    					<span class="position">Coimbatore Institute of Technology</span>
+    					<p class="mt-4">CGPA: 8.87.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2021</span>
+    					<h2>Higher Secondary School<br>(CS department)</h2>
+    					<span class="position">PSG Sarvajana hr sec school</span>
+    					<p class="mt-4">Percentage: 96.1%</p>
+    				</div>
+				</div>
+    		</div>
+	</section>
+	<section class="ftco-section" id="project-section">
+				<div class="container">
+					<div class="row justify-content-center mb-5 pb-5">
+						<div class="col-md-7 heading-section text-center ftco-animate">
+							<h1 class="big big-2">Achievements</h1>
+							<h2 class="mb-4">Achievements</h2>
+							<p>These accompliscant milestones in my personal and professional development, motivating me to next stage.</p>
+
+						</div>
+					</div>
+
+					<div class="portfolio-gallery">
+						<div class="port-box">
+							<div class="port-image">
+								<img src="images/chess.png" alt="">
+							</div>
+							<div class="port-content">
+								<h3>Chess</h3>
+								<p>"I have won the zonal competition three times consecutively in 2016, 2017, and 2018..</p>
+								
+							</div>
+						</div>
+
+						<div class="port-box">
+							<div class="port-image">
+								<img src="images/nptels.jpg" alt="">
+							</div>
+							<div class="port-content">
+								<h3>NPTEL Top5</h3>
+								<p>
+									"I achieved a top 5 score in Google Cloud Computing in NPTEL Course."</p>
+							</div>
+						</div>
+
+						<div class="port-box">
+							<div class="port-image">
+								<img src="images/AIPS1.jpg" alt="">
+							</div>
+							<div class="port-content">
+								<h3>Department Project</h3>
+								<p>"Contributed to a funded departmental project on Smart Vehicle Parking, showcasing collaborative efforts and innovative solutions to modern transportation challenges."</p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				
+	</section>
+    <section class="ftco-section ftco-no-pb" id="project-sections">
+			<div class="row">
+				<h1 class="big-4">Certifications</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="section-services">
+				
+				<div class="col-md-4">
+					<div class="service-box">
+					<div class="resume-wrap ftco-animate">
+						<i class="bx bxs-layer service-icon"></i>
+						
+						<h2 style="text-align: center;">Python for computer vision with opencv and deep learning</h2>
+						<p class="mt-4">In the course on Python for computer vision with OpenCV and deep learning, you will learn to work with computer vision techniques like blurring, segmentation, and use YOLO and CNN models for training.
+						.</p>
+						<div class="row justify-content-center mt-5">
+							<div class="btn-box service-btn">
+								<a href="https://drive.google.com/file/d/1Cj2rWTrhbws6wPPyexMWUIMKg8nowOjB/view" class="btn">View More..</a>
+							</div>
+						</div>
+					</div>
+					</div>
+				
+			</div>
+			<div class="col-md-4">
+				<div class="service-box">
+				<div class="resume-wrap ftco-animate">
+					<i class="bx bx-desktop service-icon"></i>
+			
+					<h2 style="text-align: center;">Python for Data Science</h2>
+					<p class="mt-4">I successfully completed Udemy Course on Python for Data Science course, gaining skills in Python programming, data
+					analysis, visualization, and machine learning. Through hands-on projects, I gained experience on real world projects.</p>
+					<div class="row justify-content-center mt-5">
+						<div class="btn-box service-btn">
+							<a href="https://drive.google.com/file/d/1b8XRCA071XF7QJ5ceKeTeP72YuoGCp96/view" class="btn">View More..</a>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			</div>
+			<div class="col-md-4">
+				<div class="service-box">
+				<div class="resume-wrap ftco-animate">
+					<i class="bx bxs-certification service-icon"></i>
+					<h2 style="text-align: center;">Web Development Bootcamp</h2>
+					<p class="mt-4">Great job on completing the Udemy course on web development bootcamp! Here's a corrected version of your sentence with proper grammar:
+
+						I have completed a Udemy course on web development bootcamp which encompasses HTML, CSS, JavaScript, EJS, Bootstrap, React.js, and Node.js.
+	</p> <div class="row justify-content-center mt-5">
+		<div class="btn-box service-btn">
+			<a href="#" class="btn">View More..</a>
+		</div>
+	</div>
+				</div>
+			</div>
+			
+			</div>
+
+    		
+
+			</div>
+    	</div>
+		<div class="row">
+			<div class="section-services">
+		<div class="col-md-4">
+			<div class="service-box">
+				<div class="resume-wrap ftco-animate">
+					<i class="bx bxs-layer service-icon"></i>
+		
+					<h2 style="text-align: center;">SOLID Programming principles</h2>
+					<p class="mt-4">
+						I have completed a course on the SOLID programming principles on LinkedIn Learning. Throughout the course, I gained a deep understanding of the concepts and learned how to apply them effectively in large-scale applications</p>
+					<div class="row justify-content-center mt-5">
+						<div class="btn-box service-btn">
+							<a href="https://drive.google.com/file/d/1CwNZLTUFRtiH7wgMmardSvLrUf3TvqP7/view" class="btn">View More..</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+
+		<div class="col-md-4">
+			<div class="service-box">
+				<div class="resume-wrap ftco-animate">
+					<i class="bx bxs-certification service-icon"></i>
+		
+					<h2 style="text-align: center;">Google Cloud Computing Foundations</h2>
+					<p class="mt-4">
+						This course provided me with a comprehensive introduction to cloud computing concepts and the Google Cloud Platform
+						(GCP) ecosystem and helped me understanding storage,virtualization and networking </p>
+					<div class="row justify-content-center mt-5">
+						<div class="btn-box service-btn">
+							<a href="https://drive.google.com/file/d/1JzWQ9Iv6A8JyZkwiYbKH59lDqnFzn-Rn/view" class="btn">View More..</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+			</div>
+		</div>
+		
+          
+		<div class="row justify-content-center mt-5">
+			
+		</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-sectionss">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+          
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Hariharan-techiee/flutter--ml-project-detecting_cry" class="block-20 zoom-effect" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWz_8ZGMrXKgVrrlzjhE1aeTyY7mfssWfhkQ&usqp=CAU');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Hariharan-techiee/flutter--ml-project-detecting_cry">Baby Cry Detection </a></h3>
+                <p>In this project, I used Flutter to create an end-to-end ML (machine learning) app designed to identify the reasons behind a baby's cry.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Hariharan-techiee/machine-vision-game" class="block-20 zoom-effect" style="background-image: url('images/ga.jpg');">
+              </a>
+   <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Hariharan-techiee/machine-vision-game">Ping Pong Game Development using OpenCV</a></h3>
+                <p>Developed an engaging Ping Pong game where players handle a  movements through  hand
+				gestures, leveraging the OpenCV hand tracking module by hand gestures.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Hariharan-techiee/youtube-data-analysis-using-youtube-Api" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Hariharan-techiee/youtube-data-analysis-using-youtube-Api">YouTube Data Analysis using API</a></h3>
+                <p>By scrutinizing factors impacting likes, subscribers, and views, this project aims to equip content creators with
+				data-driven strategies for channel growth and audience expansion.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="images/DPBH.png" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="images/DPBH.png">Dark Pattern Detector-DPBH Bot</a></h3>
+				  <p>Developed an extension to find Dark Patterns in the webpages and a NLP Voice enabled mobile app to analyse the privacy policies and capable of detecting the entire dark patterns from the website.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Hariharan-techiee/INDEXING-Project/tree/main/INDEXING-Project" class="block-20 zoom-effect" style="background-image: url('images/postg.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Hariharan-techiee/INDEXING-Project/tree/main/INDEXING-Project">Auto Indexing</a></h3>
+				  <p>In this project, indexing is performed based on the query structure to enhance the speed of retrieval in a PostgreSQL database</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number">3+</strong>
+                <span>Hackathons</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+				
+                <strong class="number">5+</strong>
+                <span>plus Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" >2+</strong>
+                <span>Internships</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number">5+</strong>
+                <span>Certifications</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/backk.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div>
+						<br>
+						<p><a href="https://github.com/Hariharan-techiee" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+					<span class="icon-linkedin">
+          		</div>
+          		<h3 class="mb-4">Linked-In</h3>
+	            <a href="https://www.linkedin.com/in/hari-haran-k-5aa27b227/">Linked in page</a>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <a href="tel://7708919045">+ 91 7708919045</a>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=haran07966@gmail.com">
+				haran07966@gmail.com</a>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Resume</h3>
+	            <a href="https://drive.google.com/file/d/1FtcCYzw84BbNyR-1KPDobWuzApq2LkmB/view">Download here</a>
+	          </div>
+          </div>
+
+		  
+ </section>
+
+
+ 
+	
+    
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
